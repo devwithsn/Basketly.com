@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            background-image: url('BASKETLY 1920.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Center the form vertically */
+        }
+
+        #form {
+            padding: 20px; /* Adjusted padding for better appearance */
+            border: 2px solid black;
+            background-color: cornsilk;
+            width: 20rem;
+            border-radius: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 7px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 2px solid red;
+            border-radius: 5px;
+        }
+
+        label[for="gender"] {
+            display: block; /* Display the gender label as a block */
+            margin-bottom: 5px; /* Add some spacing below the label */
+        }
+
+        #radio {
+            margin-top: 1rem;
+            display: flex; /* Display the radio buttons in a flex container */
+            align-items: center; /* Center align the items in the flex container */
+        }
+
+        #radio label {
+            margin-right: 10px; /* Add spacing between radio buttons */
+        }
+
+        #city {
+            margin-top: 1rem; /* Adjusted margin for city */
+        }
+
+        select {
+            width: 100%;
+            padding: 7px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            border-radius: 20px;
+            width: 50%; /* Adjusted width for the button */
+            padding: 0.5rem;
+            margin-top: 1rem; /* Adjusted margin for the button */
+            margin-left: 25%; /* Center the button horizontally */
+            background-color: lightblue;
+        }
+
+        #Heading {
+            text-align: center;
+            margin-bottom: 10px; /* Adjusted margin for the heading */
+        }
+    </style>
+</head>
+<body>
+    <div id="form">
+        <div id="Heading">
+            <h1>Basketly.com</h1>
+        </div>
+        <div id="text">
+            <label for="text">Username :</label>
+            <input type="text">
+        </div>
+        <div id="pwd">
+            <label for="pwd">Email address :</label>
+            <input type="email">
+        </div>
+        <div id="phone">
+            <label for="phone">Mobile Number :</label>
+            <input type="mobile">
+        </div>
+        <div id="radio">
+            <label for="gender">Gender:</label>
+            <label><input type="radio" name="gender"> Male</label>
+            <label><input type="radio" name="gender"> Female</label>
+            <label><input type="radio" name="gender"> Prefer not to say</label>
+        </div>
+        <div id="city">
+            <label for="city">City :</label>
+            <select>
+                <option value="default">Select</option>
+                <option value="cuttack">Cuttack</option>
+                <option value="bhubaneswar">Bhubaneswar</option>
+            </select>
+        </div>
+        <div id="pwd">
+            <label for="pwd">Password :</label>
+            <input type="password" name="pwd">
+        </div>
+        <div id="pwd">
+            <label for="pwd">Confirm Password :</label>
+            <input type="password" name="pwd">
+        </div>
+        <button>Sign Up</button>
+    </div>
+</body>
+</html>
